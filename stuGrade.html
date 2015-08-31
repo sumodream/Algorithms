@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	   function gradeTemps(){
+	   	this.grade = [];
+	   	this.add = add ;
+	   	this.average = average ;
+	   }
+	   function add(temp){
+	   	this.grade.push(temp);
+	   }
+	   function average(){
+	   	var total = 0 ;
+	   	var average = 0.0 ;
+	   	for(var i = 0 ; i < this.grade.length ; i++){
+	   		total += this.grade[i];
+	   	}
+	   	return total / this.grade.length ;
+	}
+	var thisSgrade = new gradeTemps();
+	thisSgrade.add(98);
+	thisSgrade.add(95);
+	alert(thisSgrade.average());
+
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
