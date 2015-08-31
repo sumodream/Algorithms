@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	/**
+	 * 正序倒序显示单词
+	 */
+	
+			function compare(num1 , num2){
+				return num1 - num2 ;
+			}
+			var names = ["angel","angle","cancal","delete","cant","before"] ;
+			alert(names);  //此处可names.join()  names.toString()  直接alert(name)是自动调用toString()方法
+			alert(names.reverse().toString());
+			var nums = [3,1,2,100,4,200]
+			alert(names.sort());
+			alert(names.reverse());
+			alert(nums.sort(compare));
+			alert(nums.reverse(compare));
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
