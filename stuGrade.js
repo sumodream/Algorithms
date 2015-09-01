@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script type="text/javascript">
 	/**
 	 * 创建记录学生成绩的对象 添加成绩的方法 显示学生平均成绩的方法
 	 */
@@ -26,9 +20,4 @@
 	var thisSgrade = new gradeTemps();
 	thisSgrade.add(98);
 	thisSgrade.add(95);
-	alert(thisSgrade.average());  //96.5
-	</script>
-</head>
-<body>
-</body>
-</html>
+	console.log(thisSgrade.average());  //96.5
