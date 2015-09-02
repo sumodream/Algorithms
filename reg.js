@@ -7,7 +7,7 @@
 	    //var a = /\d/;  //都可以
 	  return a.test(str);
 	}
-	console.log(containsNumber('abc123'));
+	//console.log(containsNumber('abc123'));
 
 
 
@@ -21,7 +21,7 @@
 	function containsRepeatingLetter(str) {
 	  return /([a-zA-Z])\1/.test(str);
 	}
-	console.log(containsRepeatingLetter('rattler'));
+	//console.log(containsRepeatingLetter('rattler'));
 
 
 
@@ -37,7 +37,7 @@
 	function endsWithVowel(str) {
 	  return /[a,e,i,o,u]$/i.test(str);
 	}
-	console.log(endsWithVowel('gorillA'));
+	//console.log(endsWithVowel('gorillA'));
 
 
 
@@ -57,7 +57,7 @@
 	        return false;
 	    }
 	}
-	console.log(captureThreeNumbers('97v123'));
+	//console.log(captureThreeNumbers('97v123'));
     
 
 
@@ -75,7 +75,7 @@
 	function matchesPattern(str) {
     	return /^(\d{3}-){2}\d{4}$/.test(str);
     }
-    console.log(matchesPattern('800-555-1212'));
+    //console.log(matchesPattern('800-555-1212'));
 
 
 
@@ -98,4 +98,43 @@
     function isUSD(str) {
     	return /^\$\d{1,3}(,\d{3})*(\.\d{2})?$/.test(str);
 	}
-	console.log(isUSD('$20,933,200.93'));
+	//console.log(isUSD('$20,933,200.93'));
+
+
+
+
+
+	/**
+	 * [isAvailableEmail description]
+	 * 判断输入是否是正确的邮箱格式 
+	 * 字符描述：
+		^ ：匹配输入的开始位置。
+		\：将下一个字符标记为特殊字符或字面值。
+		* ：匹配前一个字符零次或几次。
+		+ ：匹配前一个字符一次或多次。
+		(pattern) 与模式匹配并记住匹配。
+		x|y：匹配 x 或 y。
+		[a-z] ：表示某个范围内的字符。与指定区间内的任何字符匹配。
+		\w ：与任何单词字符匹配，包括下划线。
+
+		{n,m} 最少匹配 n 次且最多匹配 m 次
+		$ ：匹配输入的结尾
+	 */				
+	function isAvailableEmail(sEmail) {
+		//  /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/
+		//  /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+		//  /^[a-z0-9_+.-]+\@([a-z0-9-]+\.)+[a-z0-9]{2,4}$/
+		//  /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/
+		//  /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+    var reg = /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/;
+	    if(sEmail.match(reg) != null){
+	        return true;
+	    }else{
+	        return false;
+	    }
+	}
+	console.log(/^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/.test("abc_Bb.dd.cc@qq.com"));  //true
+	console.log(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test("abc_Bb.dd.cc@qq.com"));  //true
+	console.log(/^[a-z0-9_+.-]+\@([a-z0-9-]+\.)+[a-z0-9]{2,4}$/.test("abc_Bb.dd.cc@qq.com"));  //false  只能这种正常的  sumo_dream@sina.com
+	console.log(/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test("abc_Bb.dd.cc@qq.com"));  //true
+	console.log(/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test("abc_Bb.dd.cc@qq.com"));  //true
