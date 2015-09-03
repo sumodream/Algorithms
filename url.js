@@ -1,4 +1,7 @@
-    // By ClayIdol
+    /**
+     * [getUrlParam description]
+     * 返回参数key
+     */
     function getUrlParam(sUrl, sKey) {
          
         var r = [] , s = null  , i = 0;
