@@ -9,10 +9,10 @@
     var len = b.length;
     for (i = 0; i < a.length - len; i++) {
     if (a.slice(i, i + len) == b) {
-    return 1;
+        return 1;
+        }
     }
-    }
-    return -1;
+        return -1;
     }
 
-    console.log(indexOf("hello","ll"));
+    console.log(indexOf("hello","ol"));
