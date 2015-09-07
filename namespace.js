@@ -1,3 +1,7 @@
+	/**
+	 * [namespace description]
+	 * { a: { test: 1 b: { c: d{}} } }
+	 */
 	function namespace(oNamespace, sPackage) {
 	    var obj = oNamespace;
 	   var  pkg = "";
