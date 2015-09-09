@@ -21,7 +21,7 @@
 	function containsRepeatingLetter(str) {
 	  return /([a-zA-Z])\1/.test(str);
 	}
-	//console.log(containsRepeatingLetter('rattler'));
+	console.log(containsRepeatingLetter('rattler'));
 
 
 
@@ -133,8 +133,8 @@
 	        return false;
 	    }
 	}
-	console.log(/^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/.test("abc_Bb.dd.cc@qq.com"));  //true
-	console.log(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test("abc_Bb.dd.cc@qq.com"));  //true
-	console.log(/^[a-z0-9_+.-]+\@([a-z0-9-]+\.)+[a-z0-9]{2,4}$/.test("abc_Bb.dd.cc@qq.com"));  //false  只能这种正常的  sumo_dream@sina.com
-	console.log(/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test("abc_Bb.dd.cc@qq.com"));  //true
-	console.log(/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test("abc_Bb.dd.cc@qq.com"));  //true
+	//console.log(/^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/.test("abc_Bb.dd.cc@qq.com"));  //true
+	//console.log(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test("abc_Bb.dd.cc@qq.com"));  //true
+	//console.log(/^[a-z0-9_+.-]+\@([a-z0-9-]+\.)+[a-z0-9]{2,4}$/.test("abc_Bb.dd.cc@qq.com"));  //false  只能这种正常的  sumo_dream@sina.com
+	//console.log(/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test("abc_Bb.dd.cc@qq.com"));  //true
+	//console.log(/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test("abc_Bb.dd.cc@qq.com"));  //true
