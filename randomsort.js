@@ -9,4 +9,4 @@
         });
         return x;
     }
-    console.log(randomSort([1,2,3,4,5]));
+    console.log(randomSort([1,2,3,4,5,6]));
