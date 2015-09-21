@@ -20,7 +20,7 @@ function bracket(len){
                             ||('['==chPop && ']' != ch )
                             || ('('==chPop && ')' != ch ) )
                     {    //不匹配就报错
-                        System.out.println("Error : " + ch + " at " + index);
+                        console.log("Error : " + ch + " at " + index);
                         flag = true;
                     }else if (( '{'==chPop && '}' == ch ) 
                             ||('['==chPop && ']' == ch )
@@ -29,7 +29,7 @@ function bracket(len){
                         s.pop();
                     }
                 } else {//如果遇到反括号，但是栈为空，则出错
-                    System.out.println("Error : " + ch + " at " + index);
+                    console.log("Error : " + ch + " at " + index);
                     flag = true;
                 }
             default: 
