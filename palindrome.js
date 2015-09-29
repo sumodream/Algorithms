@@ -30,3 +30,29 @@
 	}else{
 		console.log(word +" is not a palindrome.");
 	}
+
+	/**
+	 * 双向队列
+	 */
+	function Deque(str){
+		var s = [];
+		for(var i = 0 ; i < str.length ; i++){
+			s.push(str[i]);
+
+		}
+		var s1= "";
+		for(s.length > 0){
+			s1.pop(str[i]);
+		}
+		var s2= "";
+		for(s.length > 0){
+			s2.shift(str[i]);
+		}
+		var s3= "";
+		for(s.length > 0){
+			s3.unshift(str[i]);
+		}
+
+	}
+	var str = "hello";
+	console.log()
