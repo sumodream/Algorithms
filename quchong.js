@@ -42,6 +42,25 @@ function uniq1(attr){
     }
     return result1;
 }
-//1,或'1'当同类别的去重了
-var s2 = [1,2,3,'3',3,4,5];           //[ 1, 2, 3, 4, 5 ]
+//1,或'1'当同类别的去重了,而且是按顺序去掉后面重复的
+var s2 = [1,2,3,'3','4',3,4,5];           //[ 1, 2, 3, 4, 5 ]
 console.log(uniq1(s2));
+
+/**
+ * 排序比较相邻 去掉后面重复项
+ * @param  {[type]} attr [description]
+ * @return {[type]}      [description]
+ */
+function uniq2(attr){
+    attr.sort();
+    var result2 = [];
+    for(var i = 0 ; i < attr.length ; i++){
+        if(attr[i] != attr[i-1]){
+            result2.push(attr[i]);
+        }
+    }
+    return result2;
+}
+//1,或'1'当同类别的去重了,而且是按顺序去掉后面重复的  同上
+var s3 = [1,2,3,'3','4',3,4,5]; 
+console.log(uniq2(s3));
