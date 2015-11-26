@@ -15,4 +15,4 @@
         }
     }
      
-    console.log(dobule('qywyer23tdd',11));
+    console.log(dobule('q2yw2yer23tdd',13)); //2

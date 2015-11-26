@@ -24,4 +24,4 @@
             }
             return text;
         }
-	console.log(count('hello world'));
+	console.log(count('hello world'));  //h:1次;e:1次;l:3次;o:2次; :1次;w:1次;r:1次;d:1次;  空格被记入其中
