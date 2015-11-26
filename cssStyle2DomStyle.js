@@ -11,4 +11,4 @@ function cssStyle2DomStyle(sName) {
         return args[1].toUpperCase();  // 小写 toLowerCase()
     });
 }
-console.log(cssStyle2DomStyle('boder-Color'));
+console.log(cssStyle2DomStyle('boder-Color'));    //boderColor
