@@ -29,6 +29,35 @@ function fibonacci(n){
 console.log(fibonacci(6));
 ```
 
-**递归**
 
+###阶乘算法并使用栈模拟递归过程
+
+
+
+```javascript
+function facorial(n){
+    if(n === 0){
+        return 1 ;
+    }else{
+        return n * facorial(n-1);
+    }
+}
+console.log(facorial(5));       //120  
+```
+**使用栈模拟递归过程**
+```javascript
+
+function fact(n){
+    var s = [];
+    while (n > 1) {
+        s.push(n--);
+    }
+    var p = 1 ;
+    while (s.length > 0) {
+        p *= s.pop();
+    }
+    return p ;
+}
+console.log(fact(5));          //120
+```
 
