@@ -1,5 +1,5 @@
 /*
-非递归
+非递归..
 此种只对有序数据有效
  */
 function binsearch(arr,data){
