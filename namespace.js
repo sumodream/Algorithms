@@ -19,4 +19,4 @@ function namespace(oNamespace, sPackage) {
      
     return obj;
 }
-console.log(namespace({a: {test: 1, b: 2}}, 'a.b.c.d'));			//{ a: { test: 1, b: { c: [Object] } } }
+console.log(namespace({a: {test: 1, b: 2}}, 'a.b.c.d'));	//{ a: { test: 1, b: { c: [Object] } } }		//{ a: { test: 1, b: { c: [Object] } } }

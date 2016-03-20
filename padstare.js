@@ -19,5 +19,5 @@ function padstare(str,min,str_char)
         return ret.join('')+str;
     }
 }
-console.log(padstare('52',3,'2'));     //255
+console.log(padstare('52',3,'2'));     //252
 console.log(padstare('5',3,'2'));      //225

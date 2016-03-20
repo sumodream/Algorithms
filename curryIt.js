@@ -28,6 +28,6 @@ function curryIt(fn){
 }
 
 var fn = function (a, b, c) {
-	return a + b + c;
+	return a * b * c;
 }; 
-console.log(curryIt(fn)(1)(2)(3));   //6
+console.log(curryIt(fn)(2)(2)(3));   //6
